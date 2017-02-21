@@ -1,0 +1,16 @@
+import math
+percent = int(input('PLease enter the percentage of speed '))
+print ('Ship is traveling at ', percent, '% of the speed of light')
+light = 299792458
+velocity = float(float(percent/100) * light)
+factor = float(1/math.sqrt(1- (velocity*velocity)/(light*light)))
+weight = float(factor*70000)
+print ('Weight of the shuttle is ', weight)
+alpha = float(4.3/factor)
+print ('Perceived time to travel to Alpha Centuari ', alpha, ' years')
+barnard = float(6/factor)
+print ('Perceived time to travel to Barnards Star is ', barnard, ' years')
+betelguese = float(309/factor)
+print ('Perceived time to travel to Betelguese is ', betelguese, ' years')
+andromeda = float(2000000/factor)
+print ('Perceived time to travel to Andromeda Galaxy is ', andromeda, ' years')
