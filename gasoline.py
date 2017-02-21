@@ -1,0 +1,12 @@
+gallons = float(input('Please enter the number of gallons of gasoline: '))
+liters = 3.7854 *gallons
+print (gallons, ' gallons is the equivalent of ',liters,' liters ')
+barrels = float(gallons/19.5)
+print (gallons, ' gallons of gasoline requires ',barrels,' barrels of oil ')
+pounds = float(gallons*20)
+print (gallons, ' gallons of gasoline produces ',pounds,' of CO2 ')
+ethanol = float(gallons*1.51915456)
+print (gallons, ' gallons of gasoline is energy equivalent to ',ethanol,' gallons of ethanol ')
+dollars = float(gallons*4)
+print (gallons, ' gallons of gasoline requires ',dollars,' US dollars ')
+print ('Thanks for playing')
